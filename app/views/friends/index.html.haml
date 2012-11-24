@@ -1,0 +1,21 @@
+%h1 Listing friends
+.table-container
+  %table
+    %thead
+      %tr
+        %th Name
+        %th Degree
+        %th Last seen
+        %th
+        %th
+    %tbody
+      = content_tag_for(:tr, @friends) do |friend|
+        %td= friend.name
+        %td= friend.degree
+        %td= friend.last_seend
+        %td= link_to 'Show', friend
+        %td= link_to 'Edit', edit_friend_path(friend)
+        %td= link_to 'Destroy', friend, method: :delete, data: {confirm: "Are you sure?"}
+
+%br
+= link_to 'New Friend', new_friend_path

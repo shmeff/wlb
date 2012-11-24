@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  degree: 1
+  last_seend: 2012-11-23 16:16:38
+
+two:
+  name: MyString
+  degree: 1
+  last_seend: 2012-11-23 16:16:38
